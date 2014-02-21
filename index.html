@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
+    <script type="text/javascript">
+        //Controller
+        function TestCtrl($scope){
+            $scope.sample = "こんにちは世界！";
+        }
+    </script>
+    <title></title>
+</head>
+<body>
+
+<div ng-controller="TestCtrl">
+    {{sample}}
+</div>
+
+<ul>
+    <li ng-repeat="value in ['one','two','three']"><p ng-bind="value"></p></li>
+</ul>
+
+</body>
+</html>
